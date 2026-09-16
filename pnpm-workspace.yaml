@@ -1,0 +1,10 @@
+packages:
+  - 'server'
+  - 'web'
+  - 'site'
+
+# 允许执行安装脚本的依赖（esbuild 需要准备平台二进制，Vite / tsx 依赖它）
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  vue-demi: true

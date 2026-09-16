@@ -1,0 +1,27 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# 环境变量（示例文件 .env.example 需要提交）
+.env
+.env.local
+!.env.example
+
+# 运行期数据（SQLite 数据库及其 WAL）
+server/data/
+data/
+
+# 构建与打包产物
+build/
+release/
+server/public/
+node/
+tools/nsis-cache/
+scripts/templates/.cache/
+*.zip
+*.exe
+
+# 编辑器
+.vscode/
+.idea/

@@ -1,0 +1,38 @@
+{
+  "name": "school-erp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "高校学生管理系统：教务管理后台 + 学校官网 + 内容管理 + 一键部署（Node/Express/SQLite + Vue 3）",
+  "license": "MIT",
+  "keywords": [
+    "student-management",
+    "school-erp",
+    "education",
+    "vue3",
+    "element-plus",
+    "express",
+    "sqlite",
+    "admin-dashboard",
+    "cms"
+  ],
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "concurrently -n api,web,site -c blue,green,magenta \"pnpm -C server dev\" \"pnpm -C web dev\" \"pnpm -C site dev\"",
+    "dev:server": "pnpm -C server dev",
+    "dev:web": "pnpm -C web dev",
+    "dev:site": "pnpm -C site dev",
+    "db:reset": "pnpm -C server db:reset",
+    "build": "pnpm -C server build && pnpm -C web build && pnpm -C site build",
+    "typecheck": "pnpm -C server typecheck && pnpm -C web typecheck && pnpm -C site typecheck",
+    "package": "node scripts/package.mjs",
+    "package:lite": "node scripts/package.mjs --no-node",
+    "installer": "node scripts/make-installer.mjs",
+    "assets": "node scripts/make-assets.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
