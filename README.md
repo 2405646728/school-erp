@@ -12,6 +12,26 @@
 
 ---
 
+## 获取与下载
+
+源码与安装包**同时托管在 GitHub 与 Gitee**，两边内容保持同步，按访问速度自行选择：
+
+| 平台 | 源码仓库 | 安装包下载 |
+| --- | --- | --- |
+| **GitHub** | <https://github.com/2405646728/school-erp> | [Releases](https://github.com/2405646728/school-erp/releases) |
+| **Gitee** | <https://gitee.com/shu-bi/school-erp> | [Releases](https://gitee.com/shu-bi/school-erp/releases) |
+
+发布的产物有两种，**均内置 Node 运行时**，目标电脑无需安装任何环境：
+
+| 文件 | 说明 |
+| --- | --- |
+| `school-erp-<版本>-setup.exe` | Windows 安装程序：向导安装、可选桌面快捷方式、写入控制面板卸载项 |
+| `school-erp-<版本>-win-x64.zip` | 免安装绿色包：解压后双击 `启动服务.bat`（Linux/macOS 执行 `./start.sh`） |
+
+下载后的运行步骤、以及如何发布新版本到两个平台，详见 **[docs/发布与下载.md](docs/发布与下载.md)**。
+
+---
+
 ## 界面预览
 
 **学校官网**（明亮学院风，内容全部由后台维护）
@@ -38,6 +58,7 @@
 
 ## 目录
 
+- [获取与下载](#获取与下载)
 - [一、功能一览](#一功能一览)
 - [二、技术栈](#二技术栈)
 - [三、快速开始](#三快速开始)
@@ -126,7 +147,9 @@ pnpm dev
 
 ## 四、部署
 
-提供三种方式，按目标环境选择。
+提供三种方式，按目标环境选择。若只是要**用**这套系统，建议直接从
+[GitHub Releases](https://github.com/2405646728/school-erp/releases) 或
+[Gitee Releases](https://gitee.com/shu-bi/school-erp/releases) 下载现成安装包，跳过下面的构建步骤。
 
 ### 4.1 免安装包 / Windows 安装程序（推荐，目标电脑无需任何环境）
 
