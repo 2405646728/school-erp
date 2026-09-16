@@ -19,7 +19,7 @@
 | 平台 | 源码仓库 | 安装包下载 |
 | --- | --- | --- |
 | **GitHub** | <https://github.com/2405646728/school-erp> | [Releases](https://github.com/2405646728/school-erp/releases) |
-| **Gitee** | <https://gitee.com/shu-bi/school-erp> | [Releases](https://gitee.com/shu-bi/school-erp/releases) |
+| **Gitee** | <https://gitee.com/zhuliu1513/school-erp> | [Releases](https://gitee.com/zhuliu1513/school-erp/releases) |
 
 发布的产物有两种，**均内置 Node 运行时**，目标电脑无需安装任何环境：
 
@@ -149,7 +149,7 @@ pnpm dev
 
 提供三种方式，按目标环境选择。若只是要**用**这套系统，建议直接从
 [GitHub Releases](https://github.com/2405646728/school-erp/releases) 或
-[Gitee Releases](https://gitee.com/shu-bi/school-erp/releases) 下载现成安装包，跳过下面的构建步骤。
+[Gitee Releases](https://gitee.com/zhuliu1513/school-erp/releases) 下载现成安装包，跳过下面的构建步骤。
 
 ### 4.1 免安装包 / Windows 安装程序（推荐，目标电脑无需任何环境）
 
