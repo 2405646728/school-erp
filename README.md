@@ -3,7 +3,7 @@
 一套可直接交付的大学教务信息化方案，包含**教务管理后台**、**学校官网**与**官网内容管理**三部分，
 并提供「免安装绿色包」与「Windows 安装程序」两种交付形式 —— 目标电脑无需安装 Node.js、数据库或任何依赖。
 
-![Node](https://img.shields.io/badge/Node-%E2%89%A522.5-339933?logo=node.js&logoColor=white)
+![Node](https://img.shields.io/badge/Node-%E2%89%A522.13-339933?logo=node.js&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue-3-4FC08D?logo=vue.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-4-000000?logo=express&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-%E5%86%85%E7%BD%AE-003B57?logo=sqlite&logoColor=white)
@@ -105,7 +105,7 @@
 | 层次 | 选型 | 说明 |
 | --- | --- | --- |
 | 后端 | Node.js 22+ / Express 4 / TypeScript | 经典分层：routes → service → db，统一响应体、Zod 校验、JWT 鉴权、操作日志 |
-| 数据库 | SQLite（`node:sqlite` 内置模块） | Node 22.5+ 自带，**零原生依赖、零安装**，不需要 MySQL |
+| 数据库 | SQLite（`node:sqlite` 内置模块） | Node 22.13+ 自带，**零原生依赖、零安装**，不需要 MySQL |
 | 管理后台 | Vue 3 / Vite 6 / Element Plus / Pinia | 通过设计令牌统一改造视觉规范 |
 | 学校官网 | Vue 3 / Vite 6 / 自定义 SCSS | 不引入组件库，独立设计语言 + 动态 SEO |
 | 图表 | ECharts 5 | 仪表盘统计图 |
@@ -120,7 +120,7 @@
 ## 三、快速开始
 
 ```bash
-# 1. 安装依赖（Node 22.5 以上）
+# 1. 安装依赖（Node 22.13 以上，推荐 24 LTS）
 pnpm install
 
 # 2. 初始化数据库并写入演示数据
